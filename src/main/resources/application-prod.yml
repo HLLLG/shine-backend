@@ -2,7 +2,7 @@ spring:
   # DataSource Config
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: 'jdbc:mysql://rm-bp1iwh2oxzg0gg0hyao.mysql.rds.aliyuncs.com:3306/user_center?useSSL=false'
+    url: 'jdbc:mysql://rm-bp14kjh9te20c7in93o.mysql.rds.aliyuncs.com/user_center?useSSL=false'
     username: hlllg
     password: HGL2020mm
   # session 失效时间

@@ -1,8 +1,6 @@
 package com.hlllg.shine.service;
 
-import com.hlllg.shine.mapper.UserMapper;
 import com.hlllg.shine.model.domain.User;
-import org.apache.poi.ss.formula.functions.T;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.StopWatch;

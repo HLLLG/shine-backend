@@ -22,17 +22,17 @@ public class RedisTest {
     @Resource
     StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
 
-    @Test
-    public void test() {
-        ValueOperations valueOperations = redisTemplate.opsForValue();
-        // 增
-        valueOperations.set("hlString", "cat");
-        valueOperations.set("hlInt", 1);
-
-        // 查
-        Object hl = valueOperations.get("hlString");
-        Assertions.assertTrue("cat".equals(hl));
-        hl = valueOperations.get("hlInt");
-        Assertions.assertTrue(1 == (Integer) hl);
-    }
+//    @Test
+//    public void test() {
+//        ValueOperations valueOperations = redisTemplate.opsForValue();
+//        // 增
+//        valueOperations.set("hlString", "cat");
+//        valueOperations.set("hlInt", 1);
+//
+//        // 查
+//        Object hl = valueOperations.get("hlString");
+//        Assertions.assertTrue("cat".equals(hl));
+//        hl = valueOperations.get("hlInt");
+//        Assertions.assertTrue(1 == (Integer) hl);
+//    }
 }

@@ -1,7 +1,7 @@
 package com.hlllg.shine.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import generator.domain.UserTeam;
+import com.hlllg.shine.model.domain.UserTeam;
 
 /**
 * @author Lenovo

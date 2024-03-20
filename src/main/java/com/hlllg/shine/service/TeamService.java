@@ -1,7 +1,8 @@
 package com.hlllg.shine.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import generator.domain.Team;
+import com.hlllg.shine.model.domain.Team;
+import com.hlllg.shine.model.domain.User;
 
 /**
 * @author Lenovo
@@ -10,4 +11,11 @@ import generator.domain.Team;
 */
 public interface TeamService extends IService<Team> {
 
+    /**
+     * 创建用户
+     * @param team
+     * @param loginUser
+     * @return
+     */
+    long addTeam(Team team, User loginUser);
 }

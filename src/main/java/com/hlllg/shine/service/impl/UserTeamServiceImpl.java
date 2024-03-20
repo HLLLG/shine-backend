@@ -1,10 +1,9 @@
 package com.hlllg.shine.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hlllg.shine.mapper.UserTeamMapper;
+import com.hlllg.shine.model.domain.UserTeam;
 import com.hlllg.shine.service.UserTeamService;
-import generator.domain.UserTeam;
-import generator.mapper.UserTeamMapper;
-import generator.service.UserTeamService;
 import org.springframework.stereotype.Service;
 
 /**

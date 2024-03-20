@@ -1,4 +1,4 @@
-package com.hlllg.shine.model.request;
+package com.hlllg.shine.model.vo;
 
 import lombok.Data;
 
@@ -7,12 +7,18 @@ import java.util.Date;
 
 /**
  * @author hlllg
- * @Date 2024/3/20 15:01
+ * @Date 2024/3/20 16:47
+ * 队伍和用户信息封装类，脱敏
  */
 @Data
-public class TeamAddRequest implements Serializable {
+public class TeamUserVO implements Serializable {
 
-    private static final long serialVersionUID = -339768804053020149L;
+    private static final long serialVersionUID = -7799565656406787218L;
+
+    /**
+     * id
+     */
+    private Long id;
 
     /**
      * 队伍名称
@@ -45,8 +51,17 @@ public class TeamAddRequest implements Serializable {
     private Integer status;
 
     /**
-     * 密码
+     * 创建时间
      */
-    private String password;
+    private Date createTime;
 
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
+
+    /**
+     * 创建人用户信息
+     */
+    private UserVO createUser;
 }

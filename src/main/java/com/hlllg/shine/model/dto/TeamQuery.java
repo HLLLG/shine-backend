@@ -23,8 +23,12 @@ public class TeamQuery extends PageRequest {
     /**
      * id
      */
-    @TableId(type = IdType.AUTO)
     private Long id;
+
+    /**
+     * 搜索关键词（同时对队伍名称和描述搜索）
+     */
+    private String searchText;
 
     /**
      * 队伍名称
@@ -40,11 +44,6 @@ public class TeamQuery extends PageRequest {
      * 最大人数
      */
     private Integer maxNum;
-
-    /**
-     * 过期时间
-     */
-    private Date expireTime;
 
     /**
      * 用户id

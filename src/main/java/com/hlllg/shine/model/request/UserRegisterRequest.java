@@ -1,4 +1,4 @@
-package com.hlllg.shine.model.domain.request;
+package com.hlllg.shine.model.request;
 
 import lombok.Data;
 

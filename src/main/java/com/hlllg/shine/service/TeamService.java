@@ -5,6 +5,7 @@ import com.hlllg.shine.model.domain.Team;
 import com.hlllg.shine.model.domain.User;
 import com.hlllg.shine.model.dto.TeamQuery;
 import com.hlllg.shine.model.request.TeamJoinRequest;
+import com.hlllg.shine.model.request.TeamQuitRequest;
 import com.hlllg.shine.model.request.TeamUpdateRequest;
 import com.hlllg.shine.model.vo.TeamUserVO;
 
@@ -18,7 +19,7 @@ import java.util.List;
 public interface TeamService extends IService<Team> {
 
     /**
-     * 创建用户
+     * 创建队伍
      * @param team
      * @param loginUser
      * @return
@@ -49,4 +50,21 @@ public interface TeamService extends IService<Team> {
      * @return
      */
     boolean joinTeam(TeamJoinRequest teamJoinRequest, User loginUser);
+
+    /**
+     * 离开队伍
+     * @param teamQuitRequest
+     * @param loginUser
+     * @return
+     */
+    boolean quitTeam(TeamQuitRequest teamQuitRequest, User loginUser);
+
+    /**
+     * 删除队伍
+     *
+     * @param id
+     * @param loginUser
+     * @return
+     */
+    boolean deleteTeam(Long id, User loginUser);
 }

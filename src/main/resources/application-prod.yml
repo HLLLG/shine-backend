@@ -2,7 +2,7 @@ spring:
   # DataSource Config
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: 'jdbc:mysql://rm-bp14kjh9te20c7in93o.mysql.rds.aliyuncs.com/user_center?useSSL=false'
+    url: 'jdbc:mysql://rm-bp14kjh9te20c7in93o.mysql.rds.aliyuncs.com/shine?useSSL=false'
     username: hlllg
     password: HGL2020mm
   # session 失效时间
@@ -15,7 +15,14 @@ spring:
   #redis 配置
   redis:
     port: 6379
-    host: localhost
+    host: 8.138.107.109
     database: 1
 server:
   address: 0.0.0.0
+  servlet:
+    session:
+      cookie:
+        domain: hlllg.cn
+        same-site: lax
+        secure: false
+

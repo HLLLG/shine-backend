@@ -7,10 +7,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * 跨域配置
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
-@Configuration
+//@Configuration
 public class WebMvcConfg implements WebMvcConfigurer {
 
     @Override
@@ -19,7 +17,7 @@ public class WebMvcConfg implements WebMvcConfigurer {
         registry.addMapping("/**")
                 //设置允许跨域请求的域名
                 //当**Credentials为true时，**Origin不能为星号，需为具体的ip地址【如果接口不带cookie,ip无需设成具体ip】
-                .allowedOrigins("http://localhost:9527", "http://127.0.0.1:9527", "http://127.0.0.1:8082", "http://127.0.0.1:8083")
+                .allowedOrigins("http://8.138.107.109:8081", "http://8.138.107.109:8080", "http://127.0.0.1:8082", "http://127.0.0.1:8083")
                 //是否允许证书 不再默认开启
                 .allowCredentials(true)
                 //设置允许的方法
